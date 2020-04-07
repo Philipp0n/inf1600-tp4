@@ -7,6 +7,11 @@ _ZNK9Rectangle12PerimeterAsmEv:
         mov %esp, %ebp /* set ebp to current esp */
         
         /* Write your solution here */
-        
+        movl 8(%ebp), %eax
+        fld 4(%eax)
+        fld 8(%eax)
+        faddp
+        fld factor
+        fmulp
         leave          /* restore ebp and esp */
         ret            /* return to the caller */
