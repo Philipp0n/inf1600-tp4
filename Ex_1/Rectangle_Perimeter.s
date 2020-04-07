@@ -16,7 +16,7 @@ _ZNK9Rectangle12PerimeterAsmEv:
         faddp
         # st[0] <- st[0] + st[1]
         fld factor
-        st[1] <- st[0] : st[0] <- factor
+        # st[1] <- st[0] : st[0] <- factor
         fmulp
         # st[0] <- factor * st[0]
         leave          /* restore ebp and esp */
